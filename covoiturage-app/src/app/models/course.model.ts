@@ -1,5 +1,6 @@
 import { User } from "./user.model";
 import { Location } from "./location.model";
+import { State } from "./enum/state.enum";
 
 export interface Course {
     id: number;
@@ -11,5 +12,5 @@ export interface Course {
     seats: number;
     driver: User;
     passengers: User[];
-    state: any; // TODO: enum
+    state: State;
 }
