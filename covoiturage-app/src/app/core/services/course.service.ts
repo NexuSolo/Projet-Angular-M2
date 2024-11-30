@@ -14,11 +14,11 @@ export class CourseService {
   constructor(private http: HttpClient) {}
 
   getCourses(): Observable<Course[]> {
+    const now = new Date();
     return this.http.get<Course[]>(this.apiUrl).pipe(
       map((courses) =>
         courses
-          .filter((course) => {
-            const now = new Date();
+      .filter((course) => {
             const departureDate = new Date(course.departureDate);
             const arrivalDate = new Date(course.arrivalDate);
             return (
