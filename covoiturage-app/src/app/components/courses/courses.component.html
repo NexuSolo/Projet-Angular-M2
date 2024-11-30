@@ -1,5 +1,12 @@
-<div *ngIf="courses$ | async as courses; else loading">
-  <app-course *ngFor="let course of courses" [course]="course"></app-course>
+<div *ngIf="courses.length > 0; else loading">
+  <app-course *ngFor="let course of paginatedCourses" [course]="course"></app-course>
+  <div class="pagination" *ngIf="totalPages > 1 && pagination">
+    <button *ngIf="currentPage !== 1" (click)="changePage(1)">1</button>
+    <button *ngIf="currentPage > 2" (click)="changePage(currentPage - 1)">{{ currentPage - 1 }}</button>
+    <button class="active">{{ currentPage }}</button>
+    <button *ngIf="currentPage < totalPages - 1" (click)="changePage(currentPage + 1)">{{ currentPage + 1 }}</button>
+    <button *ngIf="currentPage !== totalPages" (click)="changePage(totalPages)">{{ totalPages }}</button>
+  </div>
 </div>
 <ng-template #loading>
   <p>Chargement des trajets...</p>
