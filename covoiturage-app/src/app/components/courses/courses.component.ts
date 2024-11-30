@@ -14,6 +14,20 @@ export class CoursesComponent implements OnInit {
   constructor(private courseService: CourseService) {}
 
   ngOnInit(): void {
+    this.loadCourses();
+  }
+
+  loadCourses(): void {
     this.courses$ = this.courseService.getCourses();
+  }
+
+  onSearch(criteria: any): void {
+    const { departure, arrival, departureDate, passengers } = criteria;
+    this.courses$ = this.courseService.searchCourses(
+      departure,
+      arrival,
+      departureDate,
+      passengers
+    );
   }
 }

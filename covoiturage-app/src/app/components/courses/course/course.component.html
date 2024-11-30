@@ -1,5 +1,8 @@
 <div class="course-card">
   <div class="course-header">
+    <div class="course-date">
+      <span>{{ course.departureDate | date: "fullDate" }}</span>
+    </div>
     <div class="course-time">
       <span>{{ course.departureDate | date: "shortTime" }}</span>
       <span>{{ course.departure.city }}</span>
@@ -15,10 +18,13 @@
       <span>{{ course.arrival.city }}</span>
     </div>
     <div class="course-price">
-      <span>{{ course.price | currency }}</span>
+      <span>{{ course.price | currency: "EUR" }}</span>
     </div>
   </div>
   <div class="course-footer">
+    <div class="course-seats">
+      <span>{{ course.passengers.length }}/{{ course.seats }} places</span>
+    </div>
     <button class="choose-button">Choisir ce trajet</button>
   </div>
 </div>

@@ -8,8 +8,14 @@
 
 .course-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+}
+
+.course-date {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .course-time {
@@ -37,8 +43,14 @@
 
 .course-footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 16px;
+}
+
+.course-seats {
+  font-size: 14px;
+  color: #666;
 }
 
 .choose-button {

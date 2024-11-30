@@ -1,0 +1,45 @@
+<div class="searchbar">
+  <form (ngSubmit)="onSearch()">
+    <div class="form-group">
+      <label for="departure">Départ</label>
+      <input
+        type="text"
+        id="departure"
+        name="departure"
+        [(ngModel)]="departure"
+        placeholder="Ville de départ"
+      />
+    </div>
+    <div class="form-group">
+      <label for="arrival">Arrivée</label>
+      <input
+        type="text"
+        id="arrival"
+        name="arrival"
+        [(ngModel)]="arrival"
+        placeholder="Ville d'arrivée"
+      />
+    </div>
+    <div class="form-group">
+      <label for="departureDate">Date de départ</label>
+      <input
+        type="date"
+        id="departureDate"
+        name="departureDate"
+        [(ngModel)]="departureDate"
+      />
+    </div>
+    <div class="form-group">
+      <label for="passengers">Nombre de passagers</label>
+      <input
+        type="number"
+        id="passengers"
+        name="passengers"
+        [(ngModel)]="passengers"
+        min="1"
+        placeholder="Nombre de passagers"
+      />
+    </div>
+    <button type="submit" class="search-button">Rechercher</button>
+  </form>
+</div>
