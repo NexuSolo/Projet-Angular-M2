@@ -23,7 +23,17 @@ export class SearchbarComponent implements OnInit {
 
   onSearch(): void {
     if (this.searchForm.valid) {
-      this.search.emit(this.searchForm.value);
+      const search = this.searchForm.value;
+      if (search.departure === '') {
+        delete search.departure;
+      }
+      if (search.arrival === '') {
+        delete search.arrival;
+      }
+      if (search.departureDate === '') {
+        delete search.departureDate;
+      }
+      this.search.emit(search);
     }
   }
 }

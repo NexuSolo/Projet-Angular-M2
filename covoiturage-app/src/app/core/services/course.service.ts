@@ -3,7 +3,6 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Course } from 'src/app/models/course.model';
-import { State } from 'src/app/models/enum/state.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -18,7 +17,7 @@ export class CourseService {
     return this.http.get<Course[]>(this.apiUrl).pipe(
       map((courses) =>
         courses
-      .filter((course) => {
+          .filter((course) => {
             const departureDate = new Date(course.departureDate);
             const arrivalDate = new Date(course.arrivalDate);
             return (
@@ -36,9 +35,9 @@ export class CourseService {
   }
 
   searchCourses(
-    departure: string,
-    arrival: string,
-    departureDate: string,
+    departure: string | undefined,
+    arrival: string | undefined,
+    departureDate: string | undefined,
     passengers: number
   ): Observable<Course[]> {
     let params = new HttpParams();

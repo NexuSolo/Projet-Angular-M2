@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { SearchbarComponent } from './searchbar.component';
 
 describe('SearchbarComponent', () => {
@@ -9,7 +9,7 @@ describe('SearchbarComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [SearchbarComponent],
-      imports: [FormsModule]
+      imports: [ReactiveFormsModule]
     });
     fixture = TestBed.createComponent(SearchbarComponent);
     component = fixture.componentInstance;

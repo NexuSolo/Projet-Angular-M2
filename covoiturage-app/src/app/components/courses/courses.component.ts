@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CourseService } from 'src/app/core/services/course.service';
 import { Course } from 'src/app/models/course.model';
 import { Search } from 'src/app/models/search.model';
@@ -9,14 +10,17 @@ import { Search } from 'src/app/models/search.model';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent implements OnInit {
-  @Input() itemsPerPage: number = 1;
+  @Input() itemsPerPage: number = 10;
   @Input() pagination: boolean = true;
   courses: Course[] = [];
   paginatedCourses: Course[] = [];
   currentPage: number = 1;
   totalPages: number = 0;
 
-  constructor(private courseService: CourseService) {}
+  constructor(
+    private courseService: CourseService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.loadCourses();
@@ -56,5 +60,9 @@ export class CoursesComponent implements OnInit {
         this.totalPages = Math.ceil(courses.length / this.itemsPerPage);
         this.updatePaginatedCourses();
       });
+  }
+
+  onSearchHome(criteria: Search): void {
+    this.router.navigate(['/courses'], { queryParams: criteria });
   }
 }

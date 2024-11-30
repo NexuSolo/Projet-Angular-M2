@@ -16,6 +16,7 @@ import { CoursesComponent } from './components/courses/courses.component';
 import { CourseComponent } from './components/courses/course/course.component';
 import { CourseDetailComponent } from './components/courses/course-detail/course-detail.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
     CoursesComponent,
     CourseComponent,
     CourseDetailComponent,
-    SearchbarComponent
+    SearchbarComponent,
+    SearchResultsComponent
   ],
   imports: [
     BrowserModule,

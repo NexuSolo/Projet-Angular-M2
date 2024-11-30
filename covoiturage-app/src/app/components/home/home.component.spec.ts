@@ -1,7 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
-
 
 import { HomeComponent } from './home.component';
 import { SearchbarComponent } from '../searchbar/searchbar.component';
@@ -14,7 +13,7 @@ describe('HomeComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [HomeComponent, SearchbarComponent, CoursesComponent],
-      imports: [FormsModule, HttpClientTestingModule]
+      imports: [ReactiveFormsModule, HttpClientTestingModule]
     });
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;

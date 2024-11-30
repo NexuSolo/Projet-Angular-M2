@@ -7,4 +7,5 @@ Command angular :
 - ng serve
 
 Command prettier :
-- npx prettier . --write 
+
+- npx prettier . --write
