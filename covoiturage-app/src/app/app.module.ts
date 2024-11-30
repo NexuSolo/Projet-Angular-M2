@@ -15,9 +15,20 @@ import { CourseComponent } from './components/courses/course/course.component';
 import { CourseDetailComponent } from './components/courses/course-detail/course-detail.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LoginComponent, RegisterComponent, ProfilComponent, FooterComponent, HeaderComponent, CoursesComponent, CourseComponent, CourseDetailComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent,
+    ProfilComponent,
+    FooterComponent,
+    HeaderComponent,
+    CoursesComponent,
+    CourseComponent,
+    CourseDetailComponent
+  ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -7,21 +7,21 @@ import { HomeComponent } from './components/home/home.component';
 const routes: Routes = [
   {
     path: 'login',
-    component: LoginComponent,
+    component: LoginComponent
   },
   {
     path: 'register',
-    component: LoginComponent,
+    component: LoginComponent
   },
   {
-    path: "**",
+    path: '**',
     component: HomeComponent,
-    canActivate: [userGuard],
-  },
+    canActivate: [userGuard]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
 export class AppRoutingModule {}

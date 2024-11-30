@@ -1,3 +1,1 @@
-export enum State {
-    
-}
+export enum State {}

@@ -1,5 +1,7 @@
 Command json server :
- - npx json-server db.json
 
- Command angular :
- - ng serve
+- npx json-server db.json
+
+Command angular :
+
+- ng serve
