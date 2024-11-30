@@ -1,1 +1,24 @@
-<p>course works!</p>
+<div class="course-card">
+  <div class="course-header">
+    <div class="course-time">
+      <span>{{ course.departureDate | date: "shortTime" }}</span>
+      <span>{{ course.departure.city }}</span>
+    </div>
+    <div class="course-arrow">
+      <span>&rarr;</span>
+    </div>
+    <div class="course-duration">
+      <span>{{ getDuration(course.departureDate, course.arrivalDate) }}</span>
+    </div>
+    <div class="course-time">
+      <span>{{ course.arrivalDate | date: "shortTime" }}</span>
+      <span>{{ course.arrival.city }}</span>
+    </div>
+    <div class="course-price">
+      <span>{{ course.price | currency }}</span>
+    </div>
+  </div>
+  <div class="course-footer">
+    <button class="choose-button">Choisir ce trajet</button>
+  </div>
+</div>

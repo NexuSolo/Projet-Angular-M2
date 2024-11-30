@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CoursesComponent } from './components/courses/courses.component';
 import { CourseComponent } from './components/courses/course/course.component';
 import { CourseDetailComponent } from './components/courses/course-detail/course-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { CourseDetailComponent } from './components/courses/course-detail/course
     CourseComponent,
     CourseDetailComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
