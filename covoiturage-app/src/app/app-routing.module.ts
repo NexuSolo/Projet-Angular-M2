@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './components/auth/login/login.component';
 import { userGuard } from './core/guards/user.guard';
 import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './components/auth/register/register.component';
 
 const routes: Routes = [
   {
@@ -11,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'register',
-    component: LoginComponent
+    component: RegisterComponent
   },
   {
     path: '**',
@@ -22,6 +25,11 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [
+    RouterModule, 
+    HttpClientModule, 
+    FormsModule, 
+    ReactiveFormsModule
+  ]
 })
 export class AppRoutingModule {}
