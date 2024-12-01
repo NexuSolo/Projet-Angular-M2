@@ -1,1 +1,5 @@
-export enum State {}
+export enum State {
+  UPCOMING = 'UPCOMING',
+  ONGOING = 'ONGOING',
+  COMPLETED = 'COMPLETED'
+}
