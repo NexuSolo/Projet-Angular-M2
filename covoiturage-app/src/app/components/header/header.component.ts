@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  isLoggedIn: boolean = true;
+  isLoggedIn: boolean = false;
   profileDropdown: boolean = false;
 
   toggleDropdown() {
