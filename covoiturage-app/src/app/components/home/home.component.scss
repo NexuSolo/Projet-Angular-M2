@@ -63,25 +63,11 @@
 
     .car{
         .car-img{
-            width: 80vw;
+            display: none;
         }
     }
 
     .blanc{
-        border-radius: 5vw;
-        padding-top: 20vh;
-        padding-bottom: 20vh;
-
-        div{
-            width: 20vw;
-
-            img{
-                width: 20vw;
-            }
-
-            h3{
-                font-size: 2vh;
-            }
-        }
+        display: none;
     }
 }
