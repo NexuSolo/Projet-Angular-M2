@@ -1,0 +1,75 @@
+.course-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.course-date,
+.course-time,
+.course-arrow,
+.course-duration,
+.course-price {
+  margin: 0 16px;
+}
+
+.course-date {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.course-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-arrow {
+  font-size: 24px;
+}
+
+.course-duration {
+  font-size: 14px;
+  color: #666;
+}
+
+.course-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.course-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.course-seats {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.choose-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.choose-button:hover {
+  background-color: #0056b3;
+}

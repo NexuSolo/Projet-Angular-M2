@@ -1,1 +1,13 @@
-<p>home works!</p>
+<h1>Titre</h1>
+
+<app-searchbar (search)="coursesComponent.onSearchHome($event)"></app-searchbar>
+
+<h2>... Partie avec la voiture ...</h2>
+
+<h2>Les prochains trajets</h2>
+
+<app-courses
+  #coursesComponent
+  [itemsPerPage]="5"
+  [pagination]="false"
+></app-courses>
