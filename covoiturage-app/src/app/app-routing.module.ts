@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { userGuard } from './core/guards/user.guard';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -9,12 +12,17 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'courses', component: SearchResultsComponent },
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, canActivate: [userGuard] },
   { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [
+    RouterModule, 
+    HttpClientModule, 
+    FormsModule, 
+    ReactiveFormsModule
+  ]
 })
 export class AppRoutingModule {}
