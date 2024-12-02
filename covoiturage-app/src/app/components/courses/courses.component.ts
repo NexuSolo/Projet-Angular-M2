@@ -27,7 +27,7 @@ export class CoursesComponent implements OnInit {
   }
 
   loadCourses(): void {
-    this.courseService.getCourses().subscribe((courses) => {
+    this.courseService.getCourses().subscribe(courses => {
       this.courses = courses;
       this.totalPages = Math.ceil(courses.length / this.itemsPerPage);
       this.updatePaginatedCourses();
@@ -49,13 +49,8 @@ export class CoursesComponent implements OnInit {
 
   onSearch(criteria: Search): void {
     this.courseService
-      .searchCourses(
-        criteria.departure,
-        criteria.arrival,
-        criteria.departureDate,
-        criteria.passengers
-      )
-      .subscribe((courses) => {
+      .searchCourses(criteria.departure, criteria.arrival, criteria.departureDate, criteria.passengers)
+      .subscribe(courses => {
         this.courses = courses;
         this.totalPages = Math.ceil(courses.length / this.itemsPerPage);
         this.updatePaginatedCourses();

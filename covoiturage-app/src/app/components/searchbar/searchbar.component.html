@@ -1,38 +1,16 @@
 <div class="searchbar">
   <form [formGroup]="searchForm" (ngSubmit)="onSearch()">
-    <input
-      type="text"
-      id="departure"
-      formControlName="departure"
-      placeholder="Départ"
-    />
+    <input type="text" id="departure" formControlName="departure" placeholder="Départ" />
     <div class="line"></div>
-    <input
-      type="text"
-      id="arrival"
-      formControlName="arrival"
-      placeholder="Destination"
-    />
+    <input type="text" id="arrival" formControlName="arrival" placeholder="Destination" />
     <div class="line"></div>
     <div class="date">
       <label class="date-text" for="departureDate">Date</label>
-      <input
-        class="date-input"
-        type="date"
-        id="departureDate"
-        formControlName="departureDate"
-        placeholder="Date"
-      />
+      <input class="date-input" type="date" id="departureDate" formControlName="departureDate" placeholder="Date" />
     </div>
     <div class="line"></div>
     <div class="passengers">
-      <input
-        class="passengers-input"
-        type="number"
-        id="passengers"
-        formControlName="passengers"
-        min="1"
-      />
+      <input class="passengers-input" type="number" id="passengers" formControlName="passengers" min="1" />
       <p class="passengers-text">passager(s)</p>
     </div>
     <button type="submit" class="search-button">

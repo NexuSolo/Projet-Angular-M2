@@ -18,11 +18,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [
-    RouterModule, 
-    HttpClientModule, 
-    FormsModule, 
-    ReactiveFormsModule
-  ]
+  exports: [RouterModule, HttpClientModule, FormsModule, ReactiveFormsModule]
 })
 export class AppRoutingModule {}

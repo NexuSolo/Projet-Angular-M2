@@ -11,11 +11,9 @@ export class AppComponent {
   showHeaderAndFooter = true;
 
   constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
+    this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.showHeaderAndFooter = !['/login', '/register'].includes(
-          event.urlAfterRedirects
-        );
+        this.showHeaderAndFooter = !['/login', '/register'].includes(event.urlAfterRedirects);
       }
     });
   }

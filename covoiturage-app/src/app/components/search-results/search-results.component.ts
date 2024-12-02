@@ -17,7 +17,7 @@ export class SearchResultsComponent implements AfterViewInit {
   ) {}
 
   ngAfterViewInit(): void {
-    this.route.queryParams.subscribe((params) => {
+    this.route.queryParams.subscribe(params => {
       const searchParams: Search = {
         departure: params['departure'],
         arrival: params['arrival'],

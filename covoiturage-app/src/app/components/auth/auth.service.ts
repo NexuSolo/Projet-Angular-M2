@@ -8,31 +8,31 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
   user = {} as User;
-  constructor(private http : HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   register(user: User) {
     console.log(user);
     return this.http.post('http://localhost:3000/users', user).subscribe();
   }
 
-  login(user: { email: string, password: string }) {
+  login(user: { email: string; password: string }) {
     return this.http.get('http://localhost:3000/users?username=' + user.email + '&password=' + user.password);
   }
 
-  logout(){
+  logout() {
     this.user = {} as User;
     localStorage.removeItem('user');
   }
 
-  getUser(){
+  getUser() {
     return localStorage.getItem('user');
   }
 
-  saveUser(){
+  saveUser() {
     localStorage.setItem('user', '' + this.user?.id);
   }
 
-  isLoggedIn(){
+  isLoggedIn() {
     if (this.user) {
       this.saveUser();
       return true;
@@ -43,7 +43,6 @@ export class AuthService {
       });
     }
     return false;
-
   }
 
   private getUserInfo() {

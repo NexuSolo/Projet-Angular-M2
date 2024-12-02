@@ -16,16 +16,8 @@ describe('SearchResultsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        SearchResultsComponent,
-        SearchbarComponent,
-        CoursesComponent
-      ],
-      imports: [
-        RouterTestingModule,
-        HttpClientTestingModule,
-        ReactiveFormsModule
-      ],
+      declarations: [SearchResultsComponent, SearchbarComponent, CoursesComponent],
+      imports: [RouterTestingModule, HttpClientTestingModule, ReactiveFormsModule],
       providers: [
         CourseService,
         {

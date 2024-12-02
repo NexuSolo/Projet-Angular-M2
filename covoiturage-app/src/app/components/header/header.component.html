@@ -1,16 +1,16 @@
 <nav>
   <div class="left">
-    <img class="logo" src="../../../assets/logo.png" alt="">
+    <img class="logo" src="../../../assets/logo.png" alt="" />
   </div>
 
   <div class="right">
     <div class="logged-in" *ngIf="isLoggedIn; else notLoggedIn">
       <a class="create" href="">
         <p class="create-text">Créer un trajet</p>
-        <img class="create-cross" src="../../../assets/cross.png">
+        <img class="create-cross" src="../../../assets/cross.png" />
       </a>
       <div class="profile-button" href="/profile" (click)="toggleDropdown()">
-        <img class="profile-img" src="../../../assets/profile.png">
+        <img class="profile-img" src="../../../assets/profile.png" />
       </div>
       <div id="dropdownMenu" class="dropdown-content">
         <a class="profile" href="/profile">Voir mon profil</a>
