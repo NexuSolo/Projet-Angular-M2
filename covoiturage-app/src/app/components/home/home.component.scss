@@ -54,11 +54,23 @@
 
 }
 
+.title2{
+    font-size: 8vh;
+    font-weight: bold;
+    margin-top: 5vh;
+    padding: 3vh 3vw;
+}
+
 
 @media screen and (max-width: 768px){
     .title{
         font-size: 8vh;
         margin-top: 8vh;
+    }
+
+    .title2{
+        font-size: 5vh;
+        margin-top: 3vh;
     }
 
     .car{

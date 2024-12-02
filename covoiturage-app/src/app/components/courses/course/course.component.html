@@ -1,29 +1,25 @@
 <div *ngIf="course" class="course-card">
-  <div class="course-header">
-    <div class="course-date">
-      <span>{{ course.departureDate | date: "fullDate" }}</span>
-    </div>
-    <div class="course-time">
-      <span>{{ course.departureDate | date: "shortTime" }}</span>
-      <span>{{ course.departure.city }}</span>
-    </div>
-    <div class="course-arrow">
-      <span>&rarr;</span>
-    </div>
+  <div class="course-time">
+    <span class="city">{{ course.departure.city }}</span>
+    <span class="hour">{{ course.departureDate | date: "shortTime" }}</span>
+  </div>
+  <div class="duration">
+    <img src="../../../../assets/left-arrow.png" alt="">
     <div class="course-duration">
       <span>{{ getDuration(course.departureDate, course.arrivalDate) }}</span>
     </div>
-    <div class="course-time">
-      <span>{{ course.arrivalDate | date: "shortTime" }}</span>
-      <span>{{ course.arrival.city }}</span>
-    </div>
+    <img src="../../../../assets/right-arrow.png" alt="">
+  </div>
+  <div class="course-time">
+    <span class="city">{{ course.arrival.city }}</span>
+    <span class="hour">{{ course.arrivalDate | date: "shortTime" }}</span>
+  </div>
+  <div class="course-seats">
+    <span>{{ course.passengers.length }}/{{ course.seats }} places</span>
+  </div>
+  <div>
     <div class="course-price">
       <span>{{ course.price | currency: "EUR" }}</span>
-    </div>
-  </div>
-  <div class="course-footer">
-    <div class="course-seats">
-      <span>{{ course.passengers.length }}/{{ course.seats }} places</span>
     </div>
     <button class="choose-button">Choisir ce trajet</button>
   </div>
