@@ -1,0 +1,85 @@
+.title{
+    text-align: center;
+    font-size: 12vh;
+    font-weight: bold;
+    margin-top: 12vh;
+}
+
+.car{
+    width: 100vw;
+    height: auto;
+    position: relative;
+
+    .car-img{
+        width: 60vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+.blanc{
+    background-color: white;
+    width: 100vw;
+    border-radius: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -22vh;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        position: relative;
+        height: 50vh;
+
+        img{
+            width: 10vw;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h3{
+            font-size: 5vh;
+            font-weight: lighter;
+            text-align: center;
+            margin-top: 5vh;
+        }
+    }
+
+}
+
+.title2{
+    font-size: 8vh;
+    font-weight: bold;
+    margin-top: 5vh;
+    padding: 3vh 3vw;
+}
+
+
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 8vh;
+        margin-top: 8vh;
+    }
+
+    .title2{
+        font-size: 5vh;
+        margin-top: 3vh;
+    }
+
+    .car{
+        .car-img{
+            display: none;
+        }
+    }
+
+    .blanc{
+        display: none;
+    }
+}

@@ -1,10 +1,28 @@
-<h1>Titre</h1>
+<h1 class="title">Trouves ton covoiturage</h1>
 
 <app-searchbar (search)="coursesComponent.onSearchHome($event)"></app-searchbar>
 
-<h2>... Partie avec la voiture ...</h2>
+<div class="car">
+  <img class="car-img" src="../../../assets/car1.png" alt="">
+</div>
 
-<h2>Les prochains trajets</h2>
+
+<div class="blanc">
+  <div class="recherchez">
+    <img src="../../../assets/blanc/recherchez.png" alt="">
+    <h3>Recherchez le covoiturage de votre choix</h3>
+  </div>
+  <div class="reservez">
+    <img src="../../../assets/blanc/reservez.png" alt="">
+    <h3>Réservez sereinement et instantanément</h3>
+  </div>
+  <div class="voyagez">
+    <img src="../../../assets/blanc/voyagez.png" alt="">
+    <h3>Voyagez à bas prix partout dans le monde</h3>
+  </div>
+</div>
+
+<h2 class="title2">Trajets aujourd'hui</h2>
 
 <app-courses
   #coursesComponent
