@@ -1,1 +1,27 @@
-<p>header works!</p>
+<nav>
+  <div class="left">
+    <img class="logo" src="../../../assets/logo.png" alt="">
+  </div>
+
+  <div class="right">
+    <div class="logged-in" *ngIf="isLoggedIn; else notLoggedIn">
+      <a class="create" href="">
+        <p class="create-text">Créer un trajet</p>
+        <img class="create-cross" src="../../../assets/cross.png">
+      </a>
+      <div class="profile-button" href="/profile" (click)="toggleDropdown()">
+        <img class="profile-img" src="../../../assets/profile.png">
+      </div>
+      <div id="dropdownMenu" class="dropdown-content">
+        <a class="profile" href="/profile">Voir mon profil</a>
+        <a class="logout" (click)="logout()" href="#">Se déconnecter</a>
+      </div>
+    </div>
+    <ng-template #notLoggedIn>
+      <div class="not-logged-in">
+        <a class="login" (click)="login()" href="#">Se connecter</a>
+        <a class="register" href="/register">S'inscrire</a>
+      </div>
+    </ng-template>
+  </div>
+</nav>

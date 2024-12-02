@@ -5,3 +5,7 @@ Command json server :
 Command angular :
 
 - ng serve
+
+Command prettier :
+
+- npx prettier . --write
