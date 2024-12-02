@@ -10,30 +10,32 @@
   background-color: white;
   gap: 2vw;
   position: relative;
-
-  div{
-    width: 15vw;
-  }
 }
 
-.duration{
+.course-time,
+.duration,
+.course-seats,
+.right {
+  width: 15vw;
+}
+
+.duration {
   display: flex;
   justify-content: space-around;
   align-items: center;
 
-  img{
+  img {
     width: 4vw;
   }
 
-  .course-duration{
+  .course-duration {
     font-size: 3vh;
     font-weight: lighter;
     font-style: italic;
-    color: #468FCB;
+    color: #468fcb;
     text-align: center;
   }
 }
-
 
 .course-time {
   display: flex;
@@ -41,10 +43,10 @@
   align-items: center;
   font-size: 3vh;
 
-  .hour{
+  .hour {
     font-weight: lighter;
   }
-  .city{
+  .city {
     font-weight: bold;
   }
 }
@@ -53,32 +55,30 @@
   font-size: 2vh;
 }
 
+.right {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
-.course-price {
-  font-size: 4vh;
-  font-weight: bold;
-  position: absolute;
-  right: 1vw;
-  top: 1vh;
-  text-align: right;
-}
+  .course-price {
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: center;
+  }
 
+  .choose-button {
+    background-color: #8ab0e0;
+    color: white;
+    border: none;
+    padding: 1vh 2vw;
+    border-radius: 10vh;
+    font-size: 2vh;
+    font-weight: lighter;
+    cursor: pointer;
+  }
 
-.choose-button {
-  background-color: #8AB0E0;
-  color: white;
-  border: none;
-  padding: 1vh 2vw;
-  border-radius: 10vh;
-  font-size: 2vh;
-  font-weight: lighter;
-  cursor: pointer;
-  position: absolute;
-  bottom: 1vh;
-  right: 1vw;
-}
-
-.choose-button:hover {
-  background-color: #4b88ca;
-  transition: 0.3s;
+  .choose-button:hover {
+    background-color: #4b88ca;
+    transition: 0.3s;
+  }
 }
