@@ -3,9 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { userGuard } from './core/guards/user.guard';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './components/auth/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-import { RegisterComponent } from './components/register/register.component';
+import { RegisterComponent } from './components/auth/register/register.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 const routes: Routes = [
