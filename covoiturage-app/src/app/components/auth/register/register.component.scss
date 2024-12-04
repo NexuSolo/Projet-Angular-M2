@@ -1,0 +1,102 @@
+.titles {
+  margin-left: 3vw;
+  margin-top: 12vh;
+
+  .title {
+    font-size: 10vh;
+    font-weight: bold;
+  }
+
+  .already {
+    font-size: 3vh;
+    font-weight: lighter;
+    margin-top: 3vh;
+
+    a {
+      color: #468fcb;
+      text-decoration: none;
+    }
+  }
+}
+
+form {
+  margin-left: 3vw;
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    padding-left: 1vw;
+    margin: 1vh 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 2.5vh;
+    font-weight: lighter;
+    width: 40vw;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  .packed-inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+
+    input {
+      width: 18vw;
+    }
+  }
+
+  .submit {
+    background-color: #8ab0e0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 2.5vh;
+    font-weight: lighter;
+    width: 40vw;
+    margin-top: 2vh;
+    padding: 1vh 0;
+  }
+}
+
+// pour écran mobile
+@media screen and (max-width: 768px) {
+  .titles {
+    margin-top: 8vh;
+
+    .title {
+      font-size: 9vh;
+    }
+
+    .already {
+      font-size: 2.5vh;
+    }
+  }
+
+  form {
+    margin: 0;
+    padding: 0;
+    margin-top: 3vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      width: 90vw;
+    }
+
+    .packed-inputs {
+      width: 90vw;
+
+      input {
+        width: 42vw;
+      }
+    }
+    .submit {
+      width: 90vw;
+    }
+  }
+}
