@@ -68,6 +68,14 @@ form {
   }
 }
 
+.car2 {
+  position: absolute;
+  right: -20%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70vw;
+}
+
 @media screen and (max-width: 768px) {
   .titles {
     margin-top: 8vh;
@@ -103,5 +111,9 @@ form {
     .submit {
       width: 90vw;
     }
+  }
+
+  .car2 {
+    display: none;
   }
 }
