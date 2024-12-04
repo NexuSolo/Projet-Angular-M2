@@ -60,9 +60,14 @@ form {
     margin-top: 2vh;
     padding: 1vh 0;
   }
+
+  .submit:hover {
+    cursor: pointer;
+    background-color: #7292b9;
+    transition: 0.3s;
+  }
 }
 
-// pour écran mobile
 @media screen and (max-width: 768px) {
   .titles {
     margin-top: 8vh;
