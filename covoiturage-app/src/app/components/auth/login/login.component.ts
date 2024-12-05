@@ -11,7 +11,11 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
 
-  constructor( private formBuilder: FormBuilder, private authService: AuthService, private router: Router) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -23,12 +27,10 @@ export class LoginComponent implements OnInit {
   login() {
     this.authService.login(this.loginForm.value).subscribe((user: any) => {
       if (user.length === 0) alert('User or password incorrect');
-        this.authService.user = user[0];
-        if(!this.authService.user) return;
-        this.authService.saveUser();
-        this.router.navigate(['/']);
+      this.authService.user = user[0];
+      if (!this.authService.user) return;
+      this.authService.saveUser();
+      this.router.navigate(['/']);
     });
   }
-
-
 }

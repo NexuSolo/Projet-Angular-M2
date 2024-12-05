@@ -15,21 +15,14 @@ export class CourseService {
   getCourses(): Observable<Course[]> {
     const now = new Date();
     return this.http.get<Course[]>(this.apiUrl).pipe(
-      map((courses) =>
+      map(courses =>
         courses
-          .filter((course) => {
+          .filter(course => {
             const departureDate = new Date(course.departureDate);
             const arrivalDate = new Date(course.arrivalDate);
-            return (
-              departureDate > now ||
-              (departureDate <= now && arrivalDate >= now)
-            );
+            return departureDate > now || (departureDate <= now && arrivalDate >= now);
           })
-          .sort(
-            (a, b) =>
-              new Date(a.departureDate).getTime() -
-              new Date(b.departureDate).getTime()
-          )
+          .sort((a, b) => new Date(a.departureDate).getTime() - new Date(b.departureDate).getTime())
       )
     );
   }
@@ -53,12 +46,6 @@ export class CourseService {
 
     return this.http
       .get<Course[]>(this.apiUrl, { params })
-      .pipe(
-        map((courses) =>
-          courses.filter(
-            (course) => course.seats - course.passengers.length >= passengers
-          )
-        )
-      );
+      .pipe(map(courses => courses.filter(course => course.seats - course.passengers.length >= passengers)));
   }
 }
