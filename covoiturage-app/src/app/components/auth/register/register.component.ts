@@ -62,9 +62,9 @@ export class RegisterComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
-  get getErrorLabel(): string {
-    console.log(this.registerForm.errors?.['required']);
-    if (this.registerForm.errors?.['required']) {
+  get getErrorLabel() : string {
+    if (this.registerForm.errors?.['required']){
+
       return 'Veuillez remplir tous les champs';
     }
     if (this.registerForm.controls?.['password']?.errors?.['minlength'])
