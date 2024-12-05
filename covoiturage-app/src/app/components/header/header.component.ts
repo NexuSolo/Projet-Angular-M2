@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -9,8 +10,18 @@ export class HeaderComponent {
   isLoggedIn: boolean = false;
   profileDropdown: boolean = false;
 
+  constructor(private authService: AuthService) {}
+
+  ngOnInit() {
+    this.isLoggedIn = this.authService.isLoggedIn();
+    console.log(this.isLoggedIn);
+  }
+
+  ngOnChanges() {
+    this.isLoggedIn = this.authService.isLoggedIn();
+  }
+
   toggleDropdown() {
-    // changer le style de la div
     const dropdownMenu = document.getElementById('dropdownMenu');
     if (dropdownMenu) {
       if (this.profileDropdown) {
@@ -24,12 +35,10 @@ export class HeaderComponent {
     }
   }
 
-  login() {
-    this.isLoggedIn = true;
+  logout() {
+    console.log("Déconnexion");
+    this.authService.logout();
+    this.isLoggedIn = false;
   }
 
-  logout() {
-    this.isLoggedIn = false;
-    this.profileDropdown = false;
-  }
 }

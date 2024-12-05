@@ -14,12 +14,12 @@
       </div>
       <div id="dropdownMenu" class="dropdown-content">
         <a class="profile" href="/profile">Voir mon profil</a>
-        <a class="logout" (click)="logout()" href="#">Se déconnecter</a>
+        <a class="logout" (click)="logout()">Se déconnecter</a>
       </div>
     </div>
     <ng-template #notLoggedIn>
       <div class="not-logged-in">
-        <a class="login" (click)="login()" href="#">Se connecter</a>
+        <a class="login" href="/login">Se connecter</a>
         <a class="register" href="/register">S'inscrire</a>
       </div>
     </ng-template>

@@ -56,7 +56,6 @@ export class RegisterComponent implements OnInit{
   }
 
   get getErrorLabel() : string {
-    console.log(this.registerForm.errors?.['required']);
     if (this.registerForm.errors?.['required']){
       return 'Veuillez remplir tous les champs';
     }  

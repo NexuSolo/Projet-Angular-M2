@@ -33,16 +33,12 @@ export class AuthService {
   }
 
   isLoggedIn(){
-    if (this.user) {
-      this.saveUser();
+    // si le localstorage contient user
+    if(localStorage.getItem('user')){
       return true;
-    } else if (this.getUser()) {
-      this.getUserInfo().subscribe((user: any) => {
-        this.user = user[0];
-        return true;
-      });
+    } else {
+      return false;
     }
-    return false;
 
   }
 
@@ -50,7 +46,19 @@ export class AuthService {
     return this.http.get('http://localhost:3000/users/' + this.getUser());
   }
 
-  checkUserExists(email: string): Observable<any> {
-    return this.http.get('http://localhost:3000/users?email=' + email);
+  checkUserExists(email: string): boolean {
+    let userExists = false;
+    this.http.get<User[]>('http://localhost:3000/users?email=' + email).subscribe((users: User[]) => {
+      if (users.length > 0) userExists = true;
+    });
+    if(userExists){
+      console.log('User exists');
+    } else{
+      console.log('User does not exist');
+    }
+    return userExists;
+    
+
   }
+
 }

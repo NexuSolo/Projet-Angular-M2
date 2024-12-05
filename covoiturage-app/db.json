@@ -1,31 +1,31 @@
 {
   "locations": [
     {
-      "id": 1,
+      "id": "1",
       "country": "France",
       "city": "Paris",
       "address": "123 Rue de Paris"
     },
     {
-      "id": 2,
+      "id": "2",
       "country": "France",
       "city": "Lyon",
       "address": "456 Rue de Lyon"
     },
     {
-      "id": 3,
+      "id": "3",
       "country": "France",
       "city": "Marseille",
       "address": "789 Rue de Marseille"
     },
     {
-      "id": 4,
+      "id": "4",
       "country": "France",
       "city": "Nice",
       "address": "101 Rue de Nice"
     },
     {
-      "id": 5,
+      "id": "5",
       "country": "France",
       "city": "Bordeaux",
       "address": "202 Rue de Bordeaux"
@@ -33,7 +33,7 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "firstName": "John",
       "lastName": "Doe",
       "email": "john.doe@example.com",
@@ -42,7 +42,7 @@
       "birthDate": "1990-01-01"
     },
     {
-      "id": 2,
+      "id": "2",
       "firstName": "Jane",
       "lastName": "Smith",
       "email": "jane.smith@example.com",
@@ -51,18 +51,72 @@
       "birthDate": "1992-02-02"
     },
     {
-      "id": 3,
+      "id": "3",
       "firstName": "Alice",
       "lastName": "Johnson",
       "email": "alice.johnson@example.com",
       "password": "password123",
       "phone": "0112233445",
       "birthDate": "1985-03-03"
+    },
+    {
+      "id": "4f8e",
+      "firstName": "Yanis",
+      "lastName": "Rozier",
+      "email": "yanis@gmail.com",
+      "phone": "0663998086",
+      "birthDate": "2001-12-26",
+      "password": "testtest"
+    },
+    {
+      "id": "5bd6",
+      "firstName": "Yanis",
+      "lastName": "Rozier",
+      "email": "yanis@gmail.com",
+      "phone": "0663998086",
+      "birthDate": "2001-12-26",
+      "password": "testtest"
+    },
+    {
+      "id": "4f93",
+      "firstName": "Yanis",
+      "lastName": "Rozier",
+      "email": "yanis@gmail.com",
+      "phone": "0663998086",
+      "birthDate": "2001-12-26",
+      "password": "testtest"
+    },
+    {
+      "id": "2ddf",
+      "firstName": "Yanis",
+      "lastName": "Rozier",
+      "email": "yanis@gmail.com",
+      "phone": "0663998086",
+      "birthDate": "2001-12-26",
+      "password": "testtest"
+    },
+    {
+      "id": "a57d",
+      "firstName": "Yanis",
+      "lastName": "Rozier",
+      "email": "yanis@gmail.com",
+      "phone": "0663998086",
+      "birthDate": "2001-12-26",
+      "password": "testtest"
+    },
+    {
+      "id": "fa30",
+      "firstName": "Yanis",
+      "lastName": "Rozier",
+      "email": "yanis@gmail.com",
+      "phone": "0663998086",
+      "birthDate": "2001-12-26",
+      "password": "testtest"
     }
   ],
   "courses": [
     {
-      "id": 1,
+      "id": "1",
       "departure": {
         "id": 1,
         "country": "France",
@@ -102,7 +156,7 @@
       "state": "UPCOMING"
     },
     {
-      "id": 2,
+      "id": "2",
       "departure": {
         "id": 2,
         "country": "France",
@@ -142,7 +196,7 @@
       "state": "UPCOMING"
     },
     {
-      "id": 3,
+      "id": "3",
       "departure": {
         "id": 3,
         "country": "France",
@@ -172,7 +226,7 @@
       "state": "UPCOMING"
     },
     {
-      "id": 4,
+      "id": "4",
       "departure": {
         "id": 4,
         "country": "France",
@@ -212,7 +266,7 @@
       "state": "UPCOMING"
     },
     {
-      "id": 5,
+      "id": "5",
       "departure": {
         "id": 5,
         "country": "France",
@@ -253,4 +307,3 @@
     }
   ]
 }
-
