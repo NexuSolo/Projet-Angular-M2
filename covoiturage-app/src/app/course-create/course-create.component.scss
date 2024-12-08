@@ -1,0 +1,103 @@
+.content{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    .title{
+        font-size: 10vh;
+        font-weight: bold;
+        margin : 5vh 0;
+    }
+
+    .depart, .destination, .infos{
+        h2{
+            font-size: 5vh;
+        }
+    
+        font-size: 3vh;
+        font-weight: lighter;
+        background-color: white;
+        padding: 2vh 2vw;
+        border-radius: 20px;
+
+        .inputs{
+            display: flex;
+            justify-content: space-between;
+
+            .right, .left{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 40%;
+            }
+    
+            input{
+                padding: 1vw 1vh;
+                margin: 1vh 0;
+                border: none;
+                font-size: 2.5vh;
+                font-weight: lighter;
+                border-bottom: solid 1px black;
+            }
+
+            input:focus {
+                outline: none;
+            }
+        }
+
+    }
+
+    .arrow{
+        width: 10vw;
+        position: relative;
+        left : 50%;
+        transform: translateX(-50%);
+        margin: 1vh 1vw;
+    }
+
+    .line{
+        width: 30vw;
+        height: 10px;
+        background-color: white;
+        margin: 10vh 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .submit{
+        background-color: #8ab0e0;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 2.5vh;
+        font-weight: lighter;
+        width: 40vw;
+        margin-top: 10vh;
+        padding: 1vh 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .submit:hover {
+        cursor: pointer;
+        background-color: #7292b9;
+        transition: 0.3s;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    
+
+    .depart, .destination, .infos{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+
+}

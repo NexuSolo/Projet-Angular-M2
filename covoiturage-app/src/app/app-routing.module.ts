@@ -7,12 +7,15 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { CourseCreateComponent } from './course-create/course-create.component';
+
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'courses', component: SearchResultsComponent },
   { path: '', component: HomeComponent, canActivate: [userGuard] },
+  { path: 'create', component : CourseCreateComponent, canActivate: [userGuard] },
   { path: '**', redirectTo: '' }
 ];
 
