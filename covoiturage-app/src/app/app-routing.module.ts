@@ -7,7 +7,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/auth/register/register.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
-import { CourseCreateComponent } from './course-create/course-create.component';
+import { CourseCreateComponent } from './components/course-create/course-create.component';
 import { CourseDetailComponent } from './components/courses/course-detail/course-detail.component';
 
 
