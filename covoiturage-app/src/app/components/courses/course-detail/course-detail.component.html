@@ -1,26 +1,62 @@
-<div *ngIf="isLoading">
-    Chargement...
+<div *ngIf="isLoading">Chargement...</div>
+<div class="content" *ngIf="!isLoading">
+  <div class="left">
+    <div class="trajet">
+      <h2>Trajet</h2>
+
+      <div class="trajet-infos">
+        <div class="depart">
+          <p class="ville">{{ course.departure.city }}</p>
+          <p class="heure">{{ course.departureDate | date: 'shortTime' }}</p>
+        </div>
+
+        <div class="vertical-line"></div>
+
+        <div class="destination">
+          <p class="ville">{{ course.arrival.city }}</p>
+          <p class="heure">{{ course.arrivalDate | date: 'shortTime' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="participants">
+      <div class="participants-header">
+        <h2>Participants</h2>
+        <div class="total">
+          <h4>{{ course.passengers.length }} / {{ course.seats }} places</h4>
+        </div>
+      </div>
+
+      <div class="conducteur">
+        <p class="conducteur-texte">{{ course.driver.firstName }} {{ course.driver.lastName }}</p>
+        <img src="../../../../assets/driver.png" alt="">
+      </div>
+
+      <div class="line"></div>
+
+      <div class="passagers" *ngFor="let seat of [].constructor(course.seats); let i = index">
+        <p *ngIf="course.passengers[i]">
+          {{ course.passengers[i].firstName }} {{ course.passengers[i].lastName }}
+        </p>
+        <p *ngIf="!course.passengers[i]">
+          Place libre
+        </p>
+      </div>
+      
+    </div>
+
+    <div class="details">
+      <h2>Détails</h2>
+      <div class="prix">
+        <h3 class="prix-texte">{{ course.price | currency: 'EUR' }}</h3> 
+        <button class="choose-button">Confirmer ce trajet</button>
+      </div>
+    </div>
+  </div>
 </div>
-<div *ngIf="!isLoading">
-  
-    <div class="left">
 
-        <h2>Trajet</h2>
-
-        <p>{{ course.departure.city }}</p>
-        <p>{{ course.departureDate }}</p>
-
-
-        <p>{{ course.arrival.city }}</p>
-        <p>{{ course.arrivalDate }}</p>
-
-
-    </div>
-
-    <div class="right">
-
-    </div>
-
-
-
+<div class="carte">
+  <div id="map"></div>
 </div>

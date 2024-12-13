@@ -3,6 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { Course } from 'src/app/models/course.model';
 import { CourseService } from 'src/app/services/course.service';
 
+import { NgModule } from '@angular/core';
+
+import { BrowserModule } from '@angular/platform-browser';
+
+
+
 @Component({
   selector: 'app-course-detail',
   templateUrl: './course-detail.component.html',
