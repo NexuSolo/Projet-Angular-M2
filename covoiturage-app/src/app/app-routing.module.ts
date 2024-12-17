@@ -11,16 +11,14 @@ import { CourseCreateComponent } from './components/course-create/course-create.
 import { CourseDetailComponent } from './components/courses/course-detail/course-detail.component';
 import { ReservedComponent } from './components/courses/course-detail/reserved/reserved.component';
 
-
-
 const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'courses', component: SearchResultsComponent },
-  { path: '', component: HomeComponent, canActivate: [userGuard] },
-  { path: 'create', component : CourseCreateComponent, canActivate: [userGuard] },
-  { path: 'course/:id', component: CourseDetailComponent },
-  { path: 'course/:id/reserved', component: ReservedComponent },
+  { path: 'courses', component: SearchResultsComponent, canActivate: [userGuard] },
+  { path: 'create', component: CourseCreateComponent, canActivate: [userGuard] },
+  { path: 'course/:id', component: CourseDetailComponent, canActivate: [userGuard] },
+  { path: 'course/:id/reserved', component: ReservedComponent }, //a modifier
   { path: '**', redirectTo: '' }
 ];
 

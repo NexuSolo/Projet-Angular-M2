@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../../../core/services/auth.service';
 import { User } from 'src/app/models/user.model';
 
 @Component({
@@ -62,9 +62,8 @@ export class RegisterComponent implements OnInit {
     this.router.navigate(['/login']);
   }
 
-  get getErrorLabel() : string {
-    if (this.registerForm.errors?.['required']){
-
+  get getErrorLabel(): string {
+    if (this.registerForm.errors?.['required']) {
       return 'Veuillez remplir tous les champs';
     }
     if (this.registerForm.controls?.['password']?.errors?.['minlength'])

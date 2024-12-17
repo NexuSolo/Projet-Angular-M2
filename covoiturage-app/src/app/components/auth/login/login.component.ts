@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../../../core/services/auth.service';
 import { Router } from '@angular/router';
+import { User } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-login',
@@ -24,13 +25,16 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  login() {
-    this.authService.login(this.loginForm.value).subscribe((user: any) => {
-      if (user.length === 0) alert('User or password incorrect');
-      this.authService.user = user[0];
-      if (!this.authService.user) return;
-      this.authService.saveUser();
-      this.router.navigate(['/']);
-    });
+  login(): void {
+    this.authService
+      .login(this.loginForm.controls['email'].value, this.loginForm.controls['password'].value)
+      .subscribe((user: User[]) => {
+        if (user.length === 0) {
+          alert('User or password incorrect');
+          return;
+        }
+        this.authService.saveUser(user[0]);
+        this.router.navigate(['/']);
+      });
   }
 }

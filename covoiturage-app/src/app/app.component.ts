@@ -11,14 +11,15 @@ export class AppComponent {
   showHeader = true;
   showFooter = true;
 
-
   constructor(private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        this.showFooter = !['/login', '/register'].includes(event.urlAfterRedirects) && !event.urlAfterRedirects.includes('/course/') && !event.urlAfterRedirects.includes('/reserved');
+        this.showFooter =
+          !['/login', '/register'].includes(event.urlAfterRedirects) &&
+          !event.urlAfterRedirects.includes('/course/') &&
+          !event.urlAfterRedirects.includes('/reserved');
         this.showHeader = !['/login', '/register'].includes(event.urlAfterRedirects);
       }
-
     });
   }
 }

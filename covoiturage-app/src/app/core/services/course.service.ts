@@ -48,4 +48,8 @@ export class CourseService {
       .get<Course[]>(this.apiUrl, { params })
       .pipe(map(courses => courses.filter(course => course.seats - course.passengers.length >= passengers)));
   }
+
+  getCourse(id: number): Observable<Course> {
+    return this.http.get<Course>(`${this.apiUrl}/${id}`);
+  }
 }

@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 import { Course } from 'src/app/models/course.model';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-course',
   templateUrl: './course.component.html',
