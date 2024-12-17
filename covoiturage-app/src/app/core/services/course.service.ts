@@ -49,6 +49,10 @@ export class CourseService {
       .pipe(map(courses => courses.filter(course => course.seats - course.passengers.length >= passengers)));
   }
 
+  createCourse(course: Course): Observable<Course> {
+    return this.http.post<Course>(this.apiUrl, course);
+  }
+
   getCourse(id: number): Observable<Course> {
     return this.http.get<Course>(`${this.apiUrl}/${id}`);
   }

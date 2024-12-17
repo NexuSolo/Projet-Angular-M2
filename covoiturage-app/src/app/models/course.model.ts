@@ -3,7 +3,7 @@ import { Location } from './location.model';
 import { State } from './enum/state.enum';
 
 export interface Course {
-  id: number;
+  id?: number;
   departure: Location;
   arrival: Location;
   departureDate: Date;

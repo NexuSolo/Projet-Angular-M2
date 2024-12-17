@@ -12,7 +12,7 @@
 
         <div class="left">
           <input type="text" formControlName="departureAddress" placeholder="Adresse" />
-          <input type="time" formControlName="departureDate" placeholder="Heure" />
+          <input type="datetime-local" formControlName="departureDate" />
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
 
         <div class="left">
           <input type="text" formControlName="arrivalAddress" placeholder="Adresse" />
-          <input type="time" formControlName="arrivalDate" placeholder="Heure" />
+          <input type="datetime-local" formControlName="arrivalDate" />
         </div>
       </div>
     </div>
@@ -49,6 +49,12 @@
       </div>
     </div>
 
-    <button class="submit" type="submit">Créer le trajet</button>
+    <button
+      class="submit"
+      type="submit"
+      [disabled]="!departureForm.valid || !arrivalForm.valid || !informationForm.valid"
+    >
+      Créer le trajet
+    </button>
   </form>
 </div>
