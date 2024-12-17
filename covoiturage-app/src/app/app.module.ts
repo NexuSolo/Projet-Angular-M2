@@ -19,6 +19,7 @@ import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { CourseCreateComponent } from './components/course-create/course-create.component';
 import { ReservedComponent } from './components/courses/course-detail/reserved/reserved.component';
+import { ShowErrorsDirective } from './directives/show-errors.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ReservedComponent } from './components/courses/course-detail/reserved/r
     SearchbarComponent,
     SearchResultsComponent,
     CourseCreateComponent,
-    ReservedComponent
+    ReservedComponent,
+    ShowErrorsDirective
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule, ReactiveFormsModule],
   providers: [],

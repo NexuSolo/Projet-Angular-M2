@@ -7,12 +7,16 @@
       <div class="inputs">
         <div class="right">
           <input type="text" formControlName="departureCountry" placeholder="Pays" />
+          <div appShowErrors [form]="departureForm.controls['departureCountry']"></div>
           <input type="text" formControlName="departureCity" placeholder="Ville" />
+          <div appShowErrors [form]="departureForm.controls['departureCity']"></div>
         </div>
 
         <div class="left">
           <input type="text" formControlName="departureAddress" placeholder="Adresse" />
+          <div appShowErrors [form]="departureForm.controls['departureAddress']"></div>
           <input type="datetime-local" formControlName="departureDate" />
+          <div appShowErrors [form]="departureForm.controls['departureDate']"></div>
         </div>
       </div>
     </div>
@@ -24,12 +28,18 @@
       <div class="inputs">
         <div class="right">
           <input type="text" formControlName="arrivalCountry" placeholder="Pays" />
+          <div appShowErrors [form]="arrivalForm.controls['arrivalCountry']"></div>
           <input type="text" formControlName="arrivalCity" placeholder="Ville" />
+          <div appShowErrors [form]="arrivalForm.controls['arrivalCity']"></div>
         </div>
 
         <div class="left">
           <input type="text" formControlName="arrivalAddress" placeholder="Adresse" />
+          <div appShowErrors [form]="arrivalForm.controls['arrivalAddress']"></div>
           <input type="datetime-local" formControlName="arrivalDate" />
+          <div appShowErrors [form]="arrivalForm.controls['arrivalDate']"></div>
+          <div appShowErrors [form]="courseForm"></div>
+          <!-- Ajout pour afficher les erreurs du formGroup parent -->
         </div>
       </div>
     </div>
@@ -41,10 +51,12 @@
       <div class="inputs">
         <div class="right">
           <input type="number" formControlName="seats" placeholder="Sièges disponibles" />
+          <div appShowErrors [form]="informationForm.controls['seats']"></div>
         </div>
 
         <div class="left">
           <input type="number" formControlName="price" placeholder="Prix" />
+          <div appShowErrors [form]="informationForm.controls['price']"></div>
         </div>
       </div>
     </div>

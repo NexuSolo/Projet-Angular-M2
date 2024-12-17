@@ -48,7 +48,6 @@ export class CourseCreateComponent {
     if (this.courseForm.invalid) {
       return;
     }
-
     const course: Course = {
       departure: {
         country: this.departureForm.value.departureCountry,
@@ -89,8 +88,12 @@ export class CourseCreateComponent {
 
   private dateValidator(control: AbstractControl): ValidationErrors | null {
     const date = new Date(control.value);
+    const today = new Date();
     if (isNaN(date.getTime())) {
       return { invalidDate: 'La date est invalide' };
+    }
+    if (date < today) {
+      return { pastDate: 'La date ne doit pas être dans le passé' };
     }
     return null;
   }
@@ -99,6 +102,7 @@ export class CourseCreateComponent {
     const departureDate = group.get('departure.departureDate')?.value;
     const arrivalDate = group.get('arrival.arrivalDate')?.value;
     if (departureDate && arrivalDate && new Date(departureDate) >= new Date(arrivalDate)) {
+      console.log('date mismatch');
       return { dateMismatch: "La date de départ doit être avant la date d'arrivée." };
     }
     return null;
