@@ -66,6 +66,12 @@ form {
   width: 70vw;
 }
 
+.error {
+  color: red;
+  font-size: 2vh;
+  font-weight: lighter;
+}
+
 @media screen and (max-width: 768px) {
   .titles {
     margin-top: 25vh;

@@ -3,8 +3,11 @@
     <p class="already">Pas de compte ? <a class="login" href="/register">Inscrivez-vous</a></p>
 </div>
 <form [formGroup]="loginForm" (ngSubmit)="login()">
-    <input type="email" placeholder="Email" formControlName="email">
-    <input type="password" placeholder="Mot de passe" formControlName="password">
+    <input type="email" placeholder="Email" formControlName="email" required>
+    <input type="password" placeholder="Mot de passe" formControlName="password" required>
+    <p class="error" *ngIf="errorMessage.length > 0">
+        {{ errorMessage }}
+    </p>
     <button class="submit">Se connecter</button>
 </form>
 
