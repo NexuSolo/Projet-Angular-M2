@@ -56,4 +56,12 @@ export class CourseService {
   getCourse(id: number): Observable<Course> {
     return this.http.get<Course>(`${this.apiUrl}/${id}`);
   }
+
+  getAllCourses(): Observable<Course[]> {
+    return this.http.get<Course[]>(this.apiUrl);
+  }
+
+  getCoursesByDriver(driverId: number): Observable<Course[]> {
+    return this.http.get<Course[]>(`${this.apiUrl}?driver.id=${driverId}`);
+  }
 }

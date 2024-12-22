@@ -41,4 +41,13 @@ export class AuthService {
     });
     return userExists;
   }
+
+  async getCurrentUser(): Promise<User> {
+    const userId = localStorage.getItem('user');
+    if (!userId) {
+      throw new Error('User ID introuvable dans le localStorage');
+    }
+    const response = await this.http.get<User>(`http://localhost:3000/users/${userId}`).toPromise();
+    return response as User;
+  }
 }

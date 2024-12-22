@@ -1,1 +1,32 @@
-<p>profil works!</p>
+<div class="informations">
+
+    <h2 class="informations-title">Informations</h2>
+    <div class="informations-box">
+        <div class="left">
+            <img src="./../../../assets/profile.png" alt="">
+            <div class="left-text">
+                <p class="prenom">{{ currentUser.firstName}}</p>
+                <p class="nom">{{ currentUser.lastName }}</p>
+                <p class="date-de-naissance">{{ currentUser.birthDate }}</p>
+            </div>
+        </div>
+        <div class="right">
+            <p class="email">{{ currentUser.email }}</p>
+            <p class="telephone">{{ currentUser.phone }}</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="trajets">
+
+    <h2 class="trajets-title">Trajets</h2>
+
+    <div class="trajets-liste">
+        <div *ngFor="let trajet of trajets">
+            <!-- <div *ngIf="trajet.driver.id === currentUser.id"> -->
+                <app-course [course]="trajet"></app-course>
+          <!-- </div> -->
+    </div>
+
+</div>
