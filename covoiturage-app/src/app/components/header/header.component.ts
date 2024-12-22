@@ -20,7 +20,6 @@ export class HeaderComponent {
     if (this.isLoggedIn) {
       this.currentUser = await this.authService.getCurrentUser();
     }
-    console.log(this.currentUser);
   }
 
   ngOnChanges() {

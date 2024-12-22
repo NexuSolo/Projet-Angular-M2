@@ -9,11 +9,11 @@
         <p class="create-text">Créer un trajet</p>
         <img class="create-cross" src="../../../assets/cross.png" />
       </a>
-      <div class="profile-button" href="/profile" (click)="toggleDropdown()">
+      <div class="profile-button" (click)="toggleDropdown()" href="/profile">
         <img class="profile-img" src="../../../assets/profile.png" />
       </div>
       <div id="dropdownMenu" class="dropdown-content">
-        <a class="profile" href="/profil">{{ currentUser.firstName}}</a>
+        <a class="profile" href="/profil" (click)="toggleDropdown()">{{ currentUser.firstName}}</a>
         <a class="logout" (click)="logout()">Se déconnecter</a>
       </div>
     </div>
