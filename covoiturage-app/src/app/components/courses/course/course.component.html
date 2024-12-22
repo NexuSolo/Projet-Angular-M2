@@ -1,4 +1,8 @@
 <div *ngIf="course" class="course-card">
+  <div class="day">
+    <span>{{ course.departureDate | date: 'dd' }}</span>
+    <span>{{ course.departureDate | date: 'MMM' }}</span>
+  </div>
   <div class="course-time">
     <span class="city">{{ course.departure.city }}</span>
     <span class="hour">{{ course.departureDate | date: 'shortTime' }}</span>

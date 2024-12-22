@@ -12,6 +12,16 @@
   position: relative;
 }
 
+.day{
+  font-size: 3vh;
+  font-weight: bold;
+  color: #468fcb;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+
+}
+
 .course-time,
 .duration,
 .course-seats,
