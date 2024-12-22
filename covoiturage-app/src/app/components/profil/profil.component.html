@@ -24,9 +24,9 @@
 
     <div class="trajets-liste">
         <div *ngFor="let trajet of trajets">
-            <!-- <div *ngIf="trajet.driver.id === currentUser.id"> -->
+            <div *ngIf="trajet.driver.id === currentUser.id">
                 <app-course [course]="trajet"></app-course>
-          <!-- </div> -->
+          </div>
     </div>
 
 </div>

@@ -4,17 +4,28 @@ import { CourseService } from 'src/app/core/services/course.service';
 import { Course } from 'src/app/models/course.model';
 import { Router } from '@angular/router';
 import { State } from 'src/app/models/enum/state.enum';
+import { AuthService } from 'src/app/core/services/auth.service';
 
 @Component({
   selector: 'app-course-create',
   templateUrl: './course-create.component.html',
   styleUrls: ['./course-create.component.scss']
 })
+
+
 export class CourseCreateComponent {
   constructor(
     private courseService: CourseService,
-    private router: Router
+    private router: Router,
+    private authService: AuthService
   ) {}
+
+  currentUser: any = {};
+  
+  async ngOnInit() {
+    this.currentUser = await this.authService.getCurrentUser();
+    console.log(this.currentUser);
+  }
 
   departureForm: FormGroup = new FormGroup({
     departureCountry: new FormControl('', Validators.required),
@@ -45,6 +56,8 @@ export class CourseCreateComponent {
   );
 
   onSubmit(): void {
+
+    console.log(this.currentUser);
     if (this.courseForm.invalid) {
       return;
     }
@@ -63,14 +76,7 @@ export class CourseCreateComponent {
       arrivalDate: this.arrivalForm.value.arrivalDate,
       price: this.informationForm.value.price,
       seats: this.informationForm.value.seats,
-      driver: {
-        firstName: 'John',
-        lastName: 'Doe',
-        email: 'john.doe@example.com',
-        password: 'password123',
-        phone: '0123456789',
-        birthDate: '1990-01-01'
-      },
+      driver: this.currentUser,
       passengers: [],
       state: State.UPCOMING
     };

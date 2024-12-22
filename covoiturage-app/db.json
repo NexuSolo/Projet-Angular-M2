@@ -393,6 +393,150 @@
       },
       "passengers": [],
       "state": "UPCOMING"
+    },
+    {
+      "id": "bb61",
+      "departure": {
+        "country": "dsqdqsdqs",
+        "city": "dsqdqsdsq",
+        "address": "dqsdqs"
+      },
+      "arrival": {
+        "country": "dsqdqsdsq",
+        "city": "dsqdsqdsq",
+        "address": "dsqdqs"
+      },
+      "departureDate": "2024-12-29T21:42",
+      "arrivalDate": "2024-12-29T21:43",
+      "price": 30,
+      "seats": 4,
+      "driver": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "password": "password123",
+        "phone": "0123456789",
+        "birthDate": "1990-01-01"
+      },
+      "passengers": [],
+      "state": "UPCOMING"
+    },
+    {
+      "id": "b4b1",
+      "departure": {
+        "country": "dsqdqsdazd",
+        "city": "dsqdsqdsq",
+        "address": "dqsdsqd"
+      },
+      "arrival": {
+        "country": "dsqdqsdsqdqs",
+        "city": "dsqdsqdqs",
+        "address": "dqsdsqdsqdqs"
+      },
+      "departureDate": "2024-12-29T21:48",
+      "arrivalDate": "2025-01-31T21:48",
+      "price": 34,
+      "seats": 3,
+      "driver": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "password": "password123",
+        "phone": "0123456789",
+        "birthDate": "1990-01-01"
+      },
+      "passengers": [],
+      "state": "UPCOMING"
+    },
+    {
+      "id": "383f",
+      "departure": {
+        "country": "dqdqsdqsdqs",
+        "city": "dqsdqsdqs",
+        "address": "dsqdqsdsq"
+      },
+      "arrival": {
+        "country": "dsqdqsdsq",
+        "city": "dqdqsdqs",
+        "address": "dsqdsq"
+      },
+      "departureDate": "2024-12-28T21:55",
+      "arrivalDate": "2024-12-29T21:55",
+      "price": 33,
+      "seats": 3,
+      "driver": {
+        "__zone_symbol__state": true,
+        "__zone_symbol__value": {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        }
+      },
+      "passengers": [],
+      "state": "UPCOMING"
+    },
+    {
+      "id": "14f5",
+      "departure": {
+        "country": "dqsdqsdqsdsq",
+        "city": "dsqdqsdqs",
+        "address": "dsqdqsdqs"
+      },
+      "arrival": {
+        "country": "dsqdqsdqs",
+        "city": "dqdsq",
+        "address": "dsdqsdqs"
+      },
+      "departureDate": "2024-12-29T22:08",
+      "arrivalDate": "2024-12-31T22:08",
+      "price": 2,
+      "seats": 2,
+      "driver": {
+        "__zone_symbol__state": true,
+        "__zone_symbol__value": {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        }
+      },
+      "passengers": [],
+      "state": "UPCOMING"
+    },
+    {
+      "id": "4f36",
+      "departure": {
+        "country": "dsqdqsdsq",
+        "city": "dsqdsqdsq",
+        "address": "dsqdsqdsq"
+      },
+      "arrival": {
+        "country": "dqsdqsd",
+        "city": "dsqdqs",
+        "address": "dsqdqsds"
+      },
+      "departureDate": "2024-12-29T22:12",
+      "arrivalDate": "2024-12-30T22:12",
+      "price": 12,
+      "seats": 2,
+      "driver": {
+        "id": "4f8e",
+        "firstName": "Yanis",
+        "lastName": "Rozier",
+        "email": "yanis@gmail.com",
+        "phone": "0663998086",
+        "birthDate": "2001-12-26",
+        "password": "testtest"
+      },
+      "passengers": [],
+      "state": "UPCOMING"
     }
   ]
 }
