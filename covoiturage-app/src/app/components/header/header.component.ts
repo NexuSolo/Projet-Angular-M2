@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../auth/auth.service';
+import { User } from 'src/app/models/user.model';
 
 @Component({
   selector: 'app-header',
@@ -9,12 +10,17 @@ import { AuthService } from '../auth/auth.service';
 export class HeaderComponent {
   isLoggedIn: boolean = false;
   profileDropdown: boolean = false;
+  currentUser: User = {} as User;
 
   constructor(private authService: AuthService) {}
 
-  ngOnInit() {
+  async ngOnInit() {
     this.isLoggedIn = this.authService.isLoggedIn();
     console.log(this.isLoggedIn);
+    if (this.isLoggedIn) {
+      this.currentUser = await this.authService.getCurrentUser();
+    }
+    console.log(this.currentUser);
   }
 
   ngOnChanges() {
@@ -36,9 +42,8 @@ export class HeaderComponent {
   }
 
   logout() {
-    console.log("Déconnexion");
+    console.log('Déconnexion');
     this.authService.logout();
     this.isLoggedIn = false;
   }
-
 }

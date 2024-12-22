@@ -10,6 +10,7 @@ import { SearchResultsComponent } from './components/search-results/search-resul
 import { CourseCreateComponent } from './components/course-create/course-create.component';
 import { CourseDetailComponent } from './components/courses/course-detail/course-detail.component';
 import { ReservedComponent } from './components/courses/course-detail/reserved/reserved.component';
+import { ProfilComponent } from './components/profil/profil.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'create', component : CourseCreateComponent, canActivate: [userGuard] },
   { path: 'course/:id', component: CourseDetailComponent },
   { path: 'course/:id/reserved', component: ReservedComponent },
+  { path: 'profil', component: ProfilComponent },
   { path: '**', redirectTo: '' }
 ];
 

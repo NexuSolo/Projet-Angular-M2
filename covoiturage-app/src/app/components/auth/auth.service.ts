@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../../models/user.model';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -32,17 +32,25 @@ export class AuthService {
     localStorage.setItem('user', '' + this.user?.id);
   }
 
-  isLoggedIn(){
-    // si le localstorage contient user
-    if(localStorage.getItem('user')){
+  isLoggedIn() {
+    if (localStorage.getItem('user')) {
       return true;
     } else {
       return false;
     }
   }
 
-  private getUserInfo() {
-    return this.http.get('http://localhost:3000/users/' + this.getUser());
+  getUserInfoById(id: string): Observable<User> {
+    return this.http.get<User>('http://localhost:3000/users/' + id);
+  }
+
+  async getCurrentUser(): Promise<User> {
+    const userId = localStorage.getItem('user');
+    if (!userId) {
+      throw new Error('User ID introuvable dans le localStorage');
+    }
+    const response = await this.http.get<User>(`http://localhost:3000/users/${userId}`).toPromise();
+    return response as User;
   }
 
   checkUserExists(email: string): boolean {
@@ -50,14 +58,11 @@ export class AuthService {
     this.http.get<User[]>('http://localhost:3000/users?email=' + email).subscribe((users: User[]) => {
       if (users.length > 0) userExists = true;
     });
-    if(userExists){
+    if (userExists) {
       console.log('User exists');
-    } else{
+    } else {
       console.log('User does not exist');
     }
     return userExists;
-    
-
   }
-
 }
