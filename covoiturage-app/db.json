@@ -584,34 +584,6 @@
         }
       ],
       "state": "UPCOMING"
-    },
-    {
-      "id": "8dd9",
-      "departure": {
-        "country": "dsqdqsdsqdsq",
-        "city": "test",
-        "address": "dsqdsqdqs"
-      },
-      "arrival": {
-        "country": "dsqdqs",
-        "city": "test",
-        "address": "test"
-      },
-      "departureDate": "2024-12-29T23:24",
-      "arrivalDate": "2024-12-31T23:24",
-      "price": 2,
-      "seats": 2,
-      "driver": {
-        "id": "4f8e",
-        "firstName": "Yanis",
-        "lastName": "Rozier",
-        "email": "yanis@gmail.com",
-        "phone": "0663998086",
-        "birthDate": "2001-12-26",
-        "password": "testtest"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
     }
   ]
 }

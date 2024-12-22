@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CourseService } from 'src/app/core/services/course.service';
 import { Course } from 'src/app/models/course.model';
 import { AuthService } from 'src/app/core/services/auth.service';
@@ -19,7 +19,8 @@ export class CourseDetailComponent implements OnInit {
   constructor(
     private courseService: CourseService,
     private route: ActivatedRoute,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router,
   ) {}
 
   async ngOnInit() {
@@ -62,5 +63,7 @@ export class CourseDetailComponent implements OnInit {
       this.courseService.deleteCourse(this.course.id).subscribe(response => {
       });
     }
+    this.router.navigate(['/profil']);
+
   }
 }
