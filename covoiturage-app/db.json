@@ -586,53 +586,6 @@
       "state": "UPCOMING"
     },
     {
-      "id": "4f36",
-      "departure": {
-        "country": "dsqdqsdsq",
-        "city": "dsqdsqdsq",
-        "address": "dsqdsqdsq"
-      },
-      "arrival": {
-        "country": "dqsdqsd",
-        "city": "dsqdqs",
-        "address": "dsqdqsds"
-      },
-      "departureDate": "2024-12-29T22:12",
-      "arrivalDate": "2024-12-30T22:12",
-      "price": 12,
-      "seats": 2,
-      "driver": {
-        "id": "4f8e",
-        "firstName": "Yanis",
-        "lastName": "Rozier",
-        "email": "yanis@gmail.com",
-        "phone": "0663998086",
-        "birthDate": "2001-12-26",
-        "password": "testtest"
-      },
-      "passengers": [
-        {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
-        },
-        {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
-        }
-      ],
-      "state": "UPCOMING"
-    },
-    {
       "id": "8dd9",
       "departure": {
         "country": "dsqdqsdsqdsq",

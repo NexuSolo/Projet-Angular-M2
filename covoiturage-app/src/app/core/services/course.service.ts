@@ -67,6 +67,10 @@ export class CourseService {
     return this.http.get<Course[]>(`${this.apiUrl}?driver.id=${driverId}`);
   }
 
+  deleteCourse(id: number): Observable<Course> {
+    return this.http.delete<Course>(`${this.apiUrl}/${id}`);
+  }
+
   addParticipant(courseId: number, user: User): Observable<Course> {
     return this.http.get<Course>(`${this.apiUrl}/${courseId}`).pipe(
         switchMap(course => {

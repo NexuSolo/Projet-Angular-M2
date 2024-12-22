@@ -45,8 +45,7 @@ export class CourseDetailComponent implements OnInit {
     const currentUser = this.authService.getCurrentUser();
     if (this.course.id !== undefined) {
       console.log('add participant');
-      this.courseService.addParticipant(this.course.id, this.currentUser).subscribe(response => {
-      });
+      this.courseService.addParticipant(this.course.id, this.currentUser).subscribe(response => {});
     }
   }
 
@@ -55,5 +54,13 @@ export class CourseDetailComponent implements OnInit {
       return this.course.passengers.some((passenger: any) => passenger.id === this.currentUser.id);
     }
     return false;
+  }
+
+  deleletCourse() {
+    console.log('delete course');
+    if (this.course.id !== undefined) {
+      this.courseService.deleteCourse(this.course.id).subscribe(response => {
+      });
+    }
   }
 }
