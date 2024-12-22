@@ -33,7 +33,18 @@ export class ProfilComponent {
       this.trajets = data;
       console.log(this.trajets);
     });
+  }
 
+  getNumberOfTrajetsConductor() : number {
+    return this.trajets.filter(trajet => trajet.driver.id === this.currentUser.id).length;
+  }
+
+  getNumberOfTrajetsPassenger() : number {
+    return this.trajets.filter(trajet => trajet.passengers.some((passenger: any) => passenger.id === this.currentUser.id)).length;
+  }
+
+  isPassenger(trajet: any) : boolean {
+    return trajet.passengers.some((passenger: any) => passenger.id === this.currentUser.id);
   }
 
 

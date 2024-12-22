@@ -20,7 +20,7 @@
 
 <div class="trajets">
 
-    <h2 class="trajets-title">Trajets</h2>
+    <h2 class="trajets-title">Trajets conducteurs</h2>
 
     <div class="trajets-liste">
         <div *ngFor="let trajet of trajets">
@@ -28,5 +28,25 @@
                 <app-course [course]="trajet"></app-course>
           </div>
     </div>
+
+    <div *ngIf="getNumberOfTrajetsConductor() === 0">
+        <p class="no-trajets">Aucun trajet en tant que conducteur</p>
+    </div>
+
+    <h2 class="trajets-title">Trajets passagers</h2>
+
+    <div class="trajets-liste">
+        <div *ngFor="let trajet of trajets">
+            <div *ngIf="isPassenger(trajet)">
+                <app-course [course]="trajet"></app-course>
+          </div>
+    </div>
+
+    <div *ngIf="getNumberOfTrajetsPassenger() === 0">
+        <p class="no-trajets">Aucun trajet en tant que passager</p>
+    </div>
+    
+
+
 
 </div>

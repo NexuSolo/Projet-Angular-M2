@@ -69,520 +69,267 @@
       "password": "testtest"
     },
     {
-      "id": "5bd6",
-      "firstName": "Yanis",
-      "lastName": "Rozier",
-      "email": "yanis@gmail.com",
-      "phone": "0663998086",
-      "birthDate": "2001-12-26",
+      "id": "695a",
+      "firstName": "Nicolas",
+      "lastName": "Theau",
+      "email": "nicolas@gmail.com",
+      "phone": "0123456789",
+      "birthDate": "2002-05-05",
       "password": "testtest"
     },
     {
-      "id": "4f93",
-      "firstName": "Yanis",
-      "lastName": "Rozier",
-      "email": "yanis@gmail.com",
-      "phone": "0663998086",
-      "birthDate": "2001-12-26",
+      "id": "e8c2",
+      "firstName": "Sébastien",
+      "lastName": "Zhou",
+      "email": "sebastien@gmail.com",
+      "phone": "0123456789",
+      "birthDate": "2002-03-07",
       "password": "testtest"
-    },
-    {
-      "id": "2ddf",
-      "firstName": "Yanis",
-      "lastName": "Rozier",
-      "email": "yanis@gmail.com",
-      "phone": "0663998086",
-      "birthDate": "2001-12-26",
-      "password": "testtest"
-    },
-    {
-      "id": "a57d",
-      "firstName": "Yanis",
-      "lastName": "Rozier",
-      "email": "yanis@gmail.com",
-      "phone": "0663998086",
-      "birthDate": "2001-12-26",
-      "password": "testtest"
-    },
-    {
-      "id": "fa30",
-      "firstName": "Yanis",
-      "lastName": "Rozier",
-      "email": "yanis@gmail.com",
-      "phone": "0663998086",
-      "birthDate": "2001-12-26",
-      "password": "testtest"
-    },
-    {
-      "id": "68b9",
-      "firstName": "N",
-      "lastName": "T",
-      "email": "a",
-      "phone": "1234567890",
-      "birthDate": "2004-01-13",
-      "password": "azertyuiop"
     }
   ],
   "courses": [
     {
-      "id": "3",
+      "id": "1f7b",
       "departure": {
-        "id": 3,
         "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
+        "city": "Paris",
+        "address": "12 rue Leclerc"
       },
       "arrival": {
-        "id": 4,
         "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
+        "city": "Bordeaux",
+        "address": "3 avenue Jean Jaures"
       },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [
-        "4f8e",
-        "4f8e",
-        "4f8e",
-        {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
-        }
-      ],
-      "state": "UPCOMING",
-      "userId": "4f8e",
-      "participants": [
-        "4f8e"
-      ]
-    },
-    {
-      "id": "3",
-      "departure": {
-        "id": 3,
-        "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
-      },
-      "arrival": {
-        "id": 4,
-        "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
-      },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
-    },
-    {
-      "id": "3",
-      "departure": {
-        "id": 3,
-        "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
-      },
-      "arrival": {
-        "id": 4,
-        "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
-      },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
-    },
-    {
-      "id": "3",
-      "departure": {
-        "id": 3,
-        "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
-      },
-      "arrival": {
-        "id": 4,
-        "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
-      },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
-    },
-    {
-      "id": "3",
-      "departure": {
-        "id": 3,
-        "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
-      },
-      "arrival": {
-        "id": 4,
-        "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
-      },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
-    },
-    {
-      "id": "3",
-      "departure": {
-        "id": 3,
-        "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
-      },
-      "arrival": {
-        "id": 4,
-        "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
-      },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
-    },
-    {
-      "id": "3",
-      "departure": {
-        "id": 3,
-        "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
-      },
-      "arrival": {
-        "id": 4,
-        "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
-      },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
-    },
-    {
-      "id": "3",
-      "departure": {
-        "id": 3,
-        "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
-      },
-      "arrival": {
-        "id": 4,
-        "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
-      },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
-    },
-    {
-      "id": "3",
-      "departure": {
-        "id": 3,
-        "country": "France",
-        "city": "Marseille",
-        "address": "789 Rue de Marseille"
-      },
-      "arrival": {
-        "id": 4,
-        "country": "France",
-        "city": "Nice",
-        "address": "101 Rue de Nice"
-      },
-      "departureDate": "2025-12-03T10:00:00",
-      "arrivalDate": "2025-12-03T14:00:00",
-      "price": 60,
-      "seats": 4,
-      "driver": {
-        "id": 3,
-        "firstName": "Alice",
-        "lastName": "Johnson",
-        "email": "alice.johnson@example.com",
-        "password": "password123",
-        "phone": "0112233445",
-        "birthDate": "1985-03-03"
-      },
-      "passengers": [],
-      "state": "UPCOMING"
-    },
-    {
-      "id": "bb61",
-      "departure": {
-        "country": "dsqdqsdqs",
-        "city": "dsqdqsdsq",
-        "address": "dqsdqs"
-      },
-      "arrival": {
-        "country": "dsqdqsdsq",
-        "city": "dsqdsqdsq",
-        "address": "dsqdqs"
-      },
-      "departureDate": "2024-12-29T21:42",
-      "arrivalDate": "2024-12-29T21:43",
+      "departureDate": "2024-12-30T10:30",
+      "arrivalDate": "2024-12-30T15:50",
       "price": 30,
       "seats": 4,
       "driver": {
-        "firstName": "John",
-        "lastName": "Doe",
-        "email": "john.doe@example.com",
-        "password": "password123",
-        "phone": "0123456789",
-        "birthDate": "1990-01-01"
+        "id": "4f8e",
+        "firstName": "Yanis",
+        "lastName": "Rozier",
+        "email": "yanis@gmail.com",
+        "phone": "0663998086",
+        "birthDate": "2001-12-26",
+        "password": "testtest"
       },
       "passengers": [
         {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
+          "id": "1",
+          "firstName": "John",
+          "lastName": "Doe",
+          "email": "john.doe@example.com",
+          "password": "password123",
+          "phone": "0123456789",
+          "birthDate": "1990-01-01"
+        },
+        {
+          "id": "2",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "email": "jane.smith@example.com",
+          "password": "password123",
+          "phone": "0987654321",
+          "birthDate": "1992-02-02"
         }
       ],
       "state": "UPCOMING"
     },
     {
-      "id": "b4b1",
+      "id": "2f7b",
       "departure": {
-        "country": "dsqdqsdazd",
-        "city": "dsqdsqdsq",
-        "address": "dqsdsqd"
+        "country": "France",
+        "city": "Lyon",
+        "address": "12 rue Leclerc"
       },
       "arrival": {
-        "country": "dsqdqsdsqdqs",
-        "city": "dsqdsqdqs",
-        "address": "dqsdsqdsqdqs"
+        "country": "France",
+        "city": "Nice",
+        "address": "3 avenue Jean Jaures"
       },
-      "departureDate": "2024-12-29T21:48",
-      "arrivalDate": "2025-01-31T21:48",
-      "price": 34,
-      "seats": 3,
+      "departureDate": "2024-12-30T10:30",
+      "arrivalDate": "2024-12-30T17:20",
+      "price": 30,
+      "seats": 2,
       "driver": {
-        "firstName": "John",
-        "lastName": "Doe",
-        "email": "john.doe@example.com",
-        "password": "password123",
-        "phone": "0123456789",
-        "birthDate": "1990-01-01"
+        "id": "4f8e",
+        "firstName": "Yanis",
+        "lastName": "Rozier",
+        "email": "yanis@gmail.com",
+        "phone": "0663998086",
+        "birthDate": "2001-12-26",
+        "password": "testtest"
       },
       "passengers": [
         {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
+          "id": "695a",
+          "firstName": "Nicolas",
+          "lastName": "Theau",
+          "email": "nicolas@gmail.com",
+          "phone": "0123456789",
+          "birthDate": "2002-05-05",
           "password": "testtest"
         },
         {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
+          "id": "e8c2",
+          "firstName": "Sébastien",
+          "lastName": "Zhou",
+          "email": "sebastien@gmail.com",
+          "phone": "0123456789",
+          "birthDate": "2002-03-07",
           "password": "testtest"
         }
       ],
       "state": "UPCOMING"
     },
     {
-      "id": "383f",
+      "id": "3f7b",
       "departure": {
-        "country": "dqdqsdqsdqs",
-        "city": "dqsdqsdqs",
-        "address": "dsqdqsdsq"
+        "country": "France",
+        "city": "Marseille",
+        "address": "12 rue Leclerc"
       },
       "arrival": {
-        "country": "dsqdqsdsq",
-        "city": "dqdqsdqs",
-        "address": "dsqdsq"
+        "country": "France",
+        "city": "Nice",
+        "address": "3 avenue Jean Jaures"
       },
-      "departureDate": "2024-12-28T21:55",
-      "arrivalDate": "2024-12-29T21:55",
-      "price": 33,
+      "departureDate": "2024-12-30T12:30",
+      "arrivalDate": "2024-12-30T15:50",
+      "price": 30,
       "seats": 3,
       "driver": {
-        "__zone_symbol__state": true,
-        "__zone_symbol__value": {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
-        }
+        "id": "4f8e",
+        "firstName": "Yanis",
+        "lastName": "Rozier",
+        "email": "yanis@gmail.com",
+        "phone": "0663998086",
+        "birthDate": "2001-12-26",
+        "password": "testtest"
+      },
+      "passengers": [],
+      "state": "UPCOMING"
+    },
+    {
+      "id": "1947",
+      "departure": {
+        "country": "France",
+        "city": "La Rochelle",
+        "address": "2 rue Edison"
+      },
+      "arrival": {
+        "country": "France",
+        "city": "Paris",
+        "address": "3 avenue du General Leclerc"
+      },
+      "departureDate": "2024-12-31T08:10",
+      "arrivalDate": "2024-12-31T14:20",
+      "price": 25,
+      "seats": 3,
+      "driver": {
+        "id": "1",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "password": "password123",
+        "phone": "0123456789",
+        "birthDate": "1990-01-01"
       },
       "passengers": [
         {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
+          "id": "2",
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "email": "jane.smith@example.com",
+          "password": "password123",
+          "phone": "0987654321",
+          "birthDate": "1992-02-02"
         }
       ],
       "state": "UPCOMING"
     },
     {
-      "id": "14f5",
+      "id": "1948",
       "departure": {
-        "country": "dqsdqsdqsdsq",
-        "city": "dsqdqsdqs",
-        "address": "dsqdqsdqs"
+        "country": "France",
+        "city": "Paris",
+        "address": "12 rue Leclerc"
       },
       "arrival": {
-        "country": "dsqdqsdqs",
-        "city": "dqdsq",
-        "address": "dsdqsdqs"
+        "country": "France",
+        "city": "La Rochelle",
+        "address": "3 avenue du General Leclerc"
       },
-      "departureDate": "2024-12-29T22:08",
-      "arrivalDate": "2024-12-31T22:08",
+      "departureDate": "2024-12-31T16:10",
+      "arrivalDate": "2024-12-31T22:20",
+      "price": 25,
+      "seats": 3,
+      "driver": {
+        "id": "1",
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john.doe@example.com",
+        "password": "password123",
+        "phone": "0123456789",
+        "birthDate": "1990-01-01"
+      },
+      "passengers": [],
+      "state": "UPCOMING"
+    },
+    {
+      "id": "8fa1",
+      "departure": {
+        "country": "France",
+        "city": "Montreuil",
+        "address": "2 rue Louis Legrand"
+      },
+      "arrival": {
+        "country": "France",
+        "city": "Annecy",
+        "address": "145 rue Jules Vernes"
+      },
+      "departureDate": "2024-12-31T06:30",
+      "arrivalDate": "2024-12-31T16:05",
+      "price": 2,
+      "seats": 4,
+      "driver": {
+        "id": "695a",
+        "firstName": "Nicolas",
+        "lastName": "Theau",
+        "email": "nicolas@gmail.com",
+        "phone": "0123456789",
+        "birthDate": "2002-05-05",
+        "password": "testtest"
+      },
+      "passengers": [],
+      "state": "UPCOMING"
+    },
+    {
+      "id": "8fa2",
+      "departure": {
+        "country": "France",
+        "city": "Annecy",
+        "address": "145 rue Jules Vernes"
+      },
+      "arrival": {
+        "country": "France",
+        "city": "Montreuil",
+        "address": "2 rue Louis Legrand"
+      },
+      "departureDate": "2024-12-31T18:30",
+      "arrivalDate": "2024-12-31T23:05",
       "price": 2,
       "seats": 2,
       "driver": {
-        "__zone_symbol__state": true,
-        "__zone_symbol__value": {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
-        }
+        "id": "695a",
+        "firstName": "Nicolas",
+        "lastName": "Theau",
+        "email": "nicolas@gmail.com",
+        "phone": "0123456789",
+        "birthDate": "2002-05-05",
+        "password": "testtest"
       },
-      "passengers": [
-        {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
-        },
-        {
-          "id": "4f8e",
-          "firstName": "Yanis",
-          "lastName": "Rozier",
-          "email": "yanis@gmail.com",
-          "phone": "0663998086",
-          "birthDate": "2001-12-26",
-          "password": "testtest"
-        }
-      ],
+      "passengers": [],
       "state": "UPCOMING"
     }
   ]
