@@ -16,6 +16,20 @@
           <p class="ville">{{ course.arrival.city }}</p>
           <p class="heure">{{ course.arrivalDate | date: 'shortTime' }}</p>
         </div>
+
+        <div class="rdv">
+          <div class="rdv-date">
+            <p class="rdv-texte">Le</p>
+            <p class="rdv-valeur">
+              <span>{{ course.departureDate | date: 'dd' }}</span>
+              <span>{{ course.departureDate | date: 'MMM' }}</span>
+            </p>
+          </div>
+          <div class="rdv-lieux">
+            <p class="rdv-texte">Rendez-vous au :</p>
+            <p class="rdv-valeur"> {{ course.departure.address }}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>

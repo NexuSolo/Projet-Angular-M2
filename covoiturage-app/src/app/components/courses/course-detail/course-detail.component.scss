@@ -12,6 +12,42 @@ p {
   border-radius: 20px;
 }
 
+.rdv{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+
+  
+  .rdv-texte{
+    font-size: 4vh;
+    font-weight: lighter;
+  }
+
+  .rdv-valeur{
+    font-size: 4vh;
+    font-weight: bold;
+  }
+
+  .rdv-date{
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .rdv-lieux{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .content {
   display: flex;
   justify-content: space-between;
