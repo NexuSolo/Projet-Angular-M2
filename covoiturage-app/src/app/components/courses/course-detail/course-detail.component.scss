@@ -131,21 +131,48 @@ p {
           font-weight: bold;
         }
 
-        button {
-          background-color: #8ab0e0;
-          color: white;
-          border: none;
-          border-radius: 10px;
-          padding: 1vh 2vw;
-          font-size: 3vh;
-          cursor: pointer;
-          font-weight: lighter;
+        .buttons{
+
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          button {
+            width: 100%;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 1vh 2vw;
+            font-size: 3vh;
+            cursor: pointer;
+            font-weight: lighter;
+          }
+  
+          .choose-button{
+            background-color: #8ab0e0;
+          }
+  
+          .choose-button:hover {
+            background-color: #468fcb;
+            transition: 0.3s;
+          }
+  
+          .delete-button {
+            background-color: #e08a8a;
+            cursor: pointer;
+          }
+  
+          .delete-button:hover {
+            background-color: #cb4646;
+            transition: 0.3s;
+          }
+  
+          .full-button {
+            background-color: #606060;
+          }
         }
 
-        button:hover {
-          background-color: #468fcb;
-          transition: 0.3s;
-        }
+
       }
     }
   }

@@ -46,7 +46,21 @@
       <h2>Détails</h2>
       <div class="prix">
         <h3 class="prix-texte">{{ course.price | currency: 'EUR' }}</h3>
-        <button class="choose-button">Confirmer ce trajet</button>
+        <div class="buttons">
+          <div *ngIf="course.driver.id === currentUser.id">
+            <button class="delete-button">Supprimer ce trajet</button>
+          </div>
+          <div *ngIf="course.passengers.length < course.seats && course.driver.id !== currentUser.id && !alreadyJoined()">
+            <button class="choose-button" (click)="joinCourse()">Rejoindre ce trajet</button>
+          </div>
+          <div *ngIf="course.passengers.length === course.seats">
+            <button class="full-button" disabled>Trajet Complet</button>
+          </div>
+          <div *ngIf="alreadyJoined()">
+            <button class="full-button" disabled>Déjà inscrit</button>
+          </div>
+        </div>
+        <!-- <button class="choose-button" (click)="joinCourse()">Confirmer ce trajet</button> -->
       </div>
     </div>
   </div>

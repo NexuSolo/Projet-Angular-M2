@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, switchMap } from 'rxjs/operators';
 import { Course } from 'src/app/models/course.model';
+import { AuthService } from './auth.service';
+import { User } from 'src/app/models/user.model';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +12,7 @@ import { Course } from 'src/app/models/course.model';
 export class CourseService {
   private apiUrl = 'http://localhost:3000/courses';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private authService : AuthService) {}
 
   getCourses(): Observable<Course[]> {
     const now = new Date();
@@ -64,4 +66,15 @@ export class CourseService {
   getCoursesByDriver(driverId: number): Observable<Course[]> {
     return this.http.get<Course[]>(`${this.apiUrl}?driver.id=${driverId}`);
   }
+
+  addParticipant(courseId: number, user: User): Observable<Course> {
+    return this.http.get<Course>(`${this.apiUrl}/${courseId}`).pipe(
+        switchMap(course => {
+            const updatedPassengers = [...course.passengers, user];
+            return this.http.patch<Course>(`${this.apiUrl}/${courseId}`, {
+                passengers: updatedPassengers
+            });
+        })
+    );
+}
 }

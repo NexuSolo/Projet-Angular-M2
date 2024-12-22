@@ -151,8 +151,25 @@
         "phone": "0112233445",
         "birthDate": "1985-03-03"
       },
-      "passengers": [],
-      "state": "UPCOMING"
+      "passengers": [
+        "4f8e",
+        "4f8e",
+        "4f8e",
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        }
+      ],
+      "state": "UPCOMING",
+      "userId": "4f8e",
+      "participants": [
+        "4f8e"
+      ]
     },
     {
       "id": "3",
@@ -418,7 +435,17 @@
         "phone": "0123456789",
         "birthDate": "1990-01-01"
       },
-      "passengers": [],
+      "passengers": [
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        }
+      ],
       "state": "UPCOMING"
     },
     {
@@ -445,7 +472,26 @@
         "phone": "0123456789",
         "birthDate": "1990-01-01"
       },
-      "passengers": [],
+      "passengers": [
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        },
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        }
+      ],
       "state": "UPCOMING"
     },
     {
@@ -476,7 +522,17 @@
           "password": "testtest"
         }
       },
-      "passengers": [],
+      "passengers": [
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        }
+      ],
       "state": "UPCOMING"
     },
     {
@@ -507,7 +563,26 @@
           "password": "testtest"
         }
       },
-      "passengers": [],
+      "passengers": [
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        },
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        }
+      ],
       "state": "UPCOMING"
     },
     {
@@ -525,6 +600,53 @@
       "departureDate": "2024-12-29T22:12",
       "arrivalDate": "2024-12-30T22:12",
       "price": 12,
+      "seats": 2,
+      "driver": {
+        "id": "4f8e",
+        "firstName": "Yanis",
+        "lastName": "Rozier",
+        "email": "yanis@gmail.com",
+        "phone": "0663998086",
+        "birthDate": "2001-12-26",
+        "password": "testtest"
+      },
+      "passengers": [
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        },
+        {
+          "id": "4f8e",
+          "firstName": "Yanis",
+          "lastName": "Rozier",
+          "email": "yanis@gmail.com",
+          "phone": "0663998086",
+          "birthDate": "2001-12-26",
+          "password": "testtest"
+        }
+      ],
+      "state": "UPCOMING"
+    },
+    {
+      "id": "8dd9",
+      "departure": {
+        "country": "dsqdqsdsqdsq",
+        "city": "test",
+        "address": "dsqdsqdqs"
+      },
+      "arrival": {
+        "country": "dsqdqs",
+        "city": "test",
+        "address": "test"
+      },
+      "departureDate": "2024-12-29T23:24",
+      "arrivalDate": "2024-12-31T23:24",
+      "price": 2,
       "seats": 2,
       "driver": {
         "id": "4f8e",

@@ -50,4 +50,8 @@ export class AuthService {
     const response = await this.http.get<User>(`http://localhost:3000/users/${userId}`).toPromise();
     return response as User;
   }
+
+  getUser(id: number): Observable<User> {
+    return this.http.get<User>(`http://localhost:3000/users/${id}`);
+  }
 }
