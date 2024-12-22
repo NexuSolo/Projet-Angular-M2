@@ -131,6 +131,15 @@
           "password": "password123",
           "phone": "0987654321",
           "birthDate": "1992-02-02"
+        },
+        {
+          "id": "e8c2",
+          "firstName": "Sébastien",
+          "lastName": "Zhou",
+          "email": "sebastien@gmail.com",
+          "phone": "0123456789",
+          "birthDate": "2002-03-07",
+          "password": "testtest"
         }
       ],
       "state": "UPCOMING"

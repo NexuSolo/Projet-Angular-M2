@@ -48,6 +48,8 @@ export class CourseDetailComponent implements OnInit {
       console.log('add participant');
       this.courseService.addParticipant(this.course.id, this.currentUser).subscribe(response => {});
     }
+
+    this.router.navigate(['/profil']);
   }
 
   alreadyJoined(): boolean {
